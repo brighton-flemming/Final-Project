@@ -15,14 +15,14 @@ const newsDetails = document.getElementById("newsDetails");
 let newsDataArray = [];
 
 //API Definitions
+const apiKey = "efd835f7364448069a0d9c25ceeb703a";
 const headlines_news =
   "https://newsapi.org/v2/top-headlines?country=us&apiKey=efd835f7364448069a0d9c25ceeb703a";
 const technology_news =
   "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=efd835f7364448069a0d9c25ceeb703a";
 const sports_news =
   "https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=efd835f7364448069a0d9c25ceeb703a";
-const search_news =
-  "https://newsapi.org/v2/everything?&apiKey=efd835f7364448069a0d9c25ceeb703a&q=";
+const search_news = "https://newsapi.org/v2/everything?q=";
 const general_news =
   "https://newsapi.org/v2/top-headlines?country=us&category=general&apiKey=efd835f7364448069a0d9c25ceeb703a";
 const entertainment_news =
@@ -32,33 +32,60 @@ const science_news =
 const business_news =
   "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=efd835f7364448069a0d9c25ceeb703a";
 
+window.onload = function () {
+  newsType.innerHTML = "<h4>Headlines</h4>";
+  fetchHeadlines();
+};
+
 generalbutton.addEventListener("click", function () {
+  newsType.innerHTML = "<h4>General News</h4>";
   fetchGeneralNews();
 });
 
 businessbutton.addEventListener("click", function () {
+  newsType.innerHTML = "<h4>Business</h4>";
   fetchBusinessNews();
 });
 
 sportsbutton.addEventListener("click", function () {
+  newsType.innerHTML = "<h4>Sports</h4>";
   fetchSportsNews();
 });
 
 entertainmentbutton.addEventListener("click", function () {
+  newsType.innerHTML = "<h4>Entertainment</h4>";
   fetchEntertainmentNews();
 });
 
 technologybutton.addEventListener("click", function () {
+  newsType.innerHTML = "<h4>Technology</h4>";
   fetchTechnologyNews();
 });
 
 searchbutton.addEventListener("click", function () {
+  newsType.innerHTML = "<h4>Search :" + newsQuery.value + "</h4>";
   fetchQueryNews();
 });
 
 sciencebutton.addEventListener("click", function () {
+  newsType.innerHTML = "<h4>Science</h4>";
   fetchScienceNews();
 });
+
+const fetchHeadlines = async () => {
+  const response = await fetch(headlines_news);
+  newsDataArray = [];
+  if (response.status >= 200 && response.status < 300) {
+    const myJson = await response.json();
+    console.log(myJson);
+    newsDataArray = myJson.articles;
+  } else {
+    //Displays errors.
+    console.log(response.status, response.statusText);
+  }
+
+  displayNews();
+};
 
 const fetchGeneralNews = async () => {
   const response = await fetch(general_news);
@@ -135,7 +162,7 @@ const fetchQueryNews = async () => {
   if (newsQuery.value == null) return;
 
   const response = await fetch(
-    search_news + encodeURIComponent(newsQuery).value
+    search_news + newsQuery.value + "&apiKey=" + apiKey
   );
   newsDataArray = [];
   if (response.status >= 200 && response.status < 300) {
