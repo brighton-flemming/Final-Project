@@ -1,13 +1,13 @@
-# Final-Project
+# Final-Project.
 This repository contains a web page that displays the latest news using the News API. The web page is built using HTML, CSS, and JavaScript.
 
-# Features
+# Features.
 1. Displays headlines news by default on page load.
 2. Allows users to view news from different categories such as General, Business, Sports,Entertainment, Technology, and Science.
 3. Provides a search functionality to search for specific news.
 4. Fetches news data from the News API using the provided API key.
 
-# Technologies Used
+# Technologies Used.
 1. HTML
 2. CSS (Bootstrap 5.3.0)
 3. JavaScript
