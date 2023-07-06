@@ -12,7 +12,7 @@ const newsType = document.getElementById("newsType");
 const newsDetails = document.getElementById("newsDetails");
 
 //Creation of an array.
-let newsDataArray = [];
+// let newsDataArray = [];
 
 //API Definitions
 const apiKey = "efd835f7364448069a0d9c25ceeb703a";
