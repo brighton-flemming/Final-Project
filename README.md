@@ -38,10 +38,10 @@ The search functionality allows users to search for news articles using keywords
 # News Section.
 The news section displays the latest news articles based on the selected category or search query. The news articles are dynamically fetched from the News API and displayed on the page. Each news article includes a title, description, source, and publication date.
 
-# Footer
+# Footer.
 The footer section displays the name of the developer, "Brighton Flemming".
 
-# API Integration
+# API Integration.
 The web page integrates with the News API to fetch the latest news articles. The following API endpoints are used:
 
 1. Top Headlines: Fetches the top headlines news from the United States.
@@ -50,11 +50,11 @@ The web page integrates with the News API to fetch the latest news articles. The
 
  To use the News API, an API key is required. The API key used in this web page is provided in the JavaScript code.
 
- # Dependencies
+ # Dependencies.
 The web page uses the following dependencies:
 
 Bootstrap 5.3.0: A CSS framework used for styling the web page. The Bootstrap CSS file is included via a CDN link.
 
-# License
+# License.
 This project is licensed under the MIT License.
 
