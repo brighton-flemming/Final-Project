@@ -32,10 +32,10 @@ The navigation bar allows users to navigate between different news categories an
 5. Technology: Displays technology news articles.
 6. Science: Displays science news articles.
 
-# Search
+# Search.
 The search functionality allows users to search for news articles using keywords. Enter a keyword in the search input field and click the "Search" button to fetch and display news related to the entered keyword.
 
-# News Section
+# News Section.
 The news section displays the latest news articles based on the selected category or search query. The news articles are dynamically fetched from the News API and displayed on the page. Each news article includes a title, description, source, and publication date.
 
 # Footer
