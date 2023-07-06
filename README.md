@@ -12,17 +12,17 @@ This repository contains a web page that displays the latest news using the News
 2. CSS (Bootstrap 5.3.0)
 3. JavaScript
 
-# Getting Started
+# Getting Started.
 To run the web page locally, follow these steps:
 
 1. Clone this repository to your local machine using the following command:
 git clone <https://github.com/brighton-flemming/Final-Project>
 2. Open the index.html file in your web browser.
 
-# Usage
+# Usage.
 The web page consists of a navigation bar, a news section, and a footer.
 
-# Navigation Bar
+# Navigation Bar.
 The navigation bar allows users to navigate between different news categories and perform a search.
 
 1. General News: Displays general news articles.
