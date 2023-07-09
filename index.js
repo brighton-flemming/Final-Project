@@ -15,22 +15,22 @@ const newsDetails = document.getElementById("newsDetails");
 let newsDataArray = [];
 
 //API Definitions
-const apiKey = "efd835f7364448069a0d9c25ceeb703a";
+const apiKey = `efd835f7364448069a0d9c25ceeb703a`;
 const headlines_news =
-  "https://newsapi.org/v2/top-headlines?country=us&apiKey=efd835f7364448069a0d9c25ceeb703a";
+  `https://newsapi.org/v2/top-headlines?country=us&apiKey=efd835f7364448069a0d9c25ceeb703a`;
 const technology_news =
-  "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=efd835f7364448069a0d9c25ceeb703a";
+  `https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=efd835f7364448069a0d9c25ceeb703a`;
 const sports_news =
-  "https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=efd835f7364448069a0d9c25ceeb703a";
-const search_news = "https://newsapi.org/v2/everything?q=";
+  `https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=efd835f7364448069a0d9c25ceeb703a`;
+const search_news = `https://newsapi.org/v2/everything?q=`;
 const general_news =
-  "https://newsapi.org/v2/top-headlines?country=us&category=general&apiKey=efd835f7364448069a0d9c25ceeb703a";
+  `https://newsapi.org/v2/top-headlines?country=us&category=general&apiKey=efd835f7364448069a0d9c25ceeb703a`;
 const entertainment_news =
-  "https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=efd835f7364448069a0d9c25ceeb703a";
+  `https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=efd835f7364448069a0d9c25ceeb703a`;
 const science_news =
-  "https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=efd835f7364448069a0d9c25ceeb703a";
+  `https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=efd835f7364448069a0d9c25ceeb703a`;
 const business_news =
-  "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=efd835f7364448069a0d9c25ceeb703a";
+  `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=efd835f7364448069a0d9c25ceeb703a`;
 
 window.onload = function () {
   newsType.innerHTML = "<h4>Headlines</h4>";
